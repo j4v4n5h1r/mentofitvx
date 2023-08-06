@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" class="isPWA"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="./index-contact_files/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./index-contact_files/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.gstatic.com/">
+<link href="./index-contact_files/css2" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="./app/icons/icon-192x192.png"><link class="contact-form-s" rel="stylesheet" type="text/css" href="./index-contact_files/form.css"><style>
+            .flipX video::-webkit-media-text-track-display {
+                transform: matrix(-1, 0, 0, 1, 0, 0) !important;
+            }
+            .flipXY video::-webkit-media-text-track-display {
+                transform: matrix(-1, 0, 0, -1, 0, 0) !important;
+            }
+            .flipXYX video::-webkit-media-text-track-display {
+                transform: matrix(1, 0, 0, -1, 0, 0) !important;
+            }</style><style>
+            @keyframes blinkWarning {
+                0% { color: red; }
+                100% { color: white; }
+            }
+            @-webkit-keyframes blinkWarning {
+                0% { color: red; }
+                100% { color: white; }
+            }
+            .blinkWarning {
+                -webkit-animation: blinkWarning 1s linear infinite;
+                -moz-animation: blinkWarning 1s linear infinite;
+                animation: blinkWarning 1s linear infinite;
+            }</style></head>
+<body class="theme-light" style="">
+<div id="preloader" class="preloader-hide"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page" data-swup="0">
+
+<div class="header-bar header-fixed header-app">
+<a data-bs-toggle="offcanvas" data-bs-target="#menu-main" href="#"><i class="bi bi-list color-theme"></i></a>
+<a href="#" class="header-title color-theme">Contact</a>
+<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+<a href="#" class="show-on-theme-light" data-toggle-theme=""><i class="bi bi-moon-fill font-13"></i></a>
+<a href="#" class="show-on-theme-dark" data-toggle-theme=""><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+</div>
+
+<div id="footer-bar" class="footer-bar">
+<a href="index-pages.html"><i class="bi bi-heart-fill font-15"></i><span>Pages</span></a>
+<a href="index-components.html"><i class="bi bi-star-fill font-17"></i><span>Features</span></a>
+<a href="index.html" class="active-nav"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+<a href="index-media.html"><i class="bi bi-image font-16"></i><span>Media</span></a>
+<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+</div>
+
+<div id="menu-main" data-menu-active="nav-mails" data-menu-load="menu-main.html" style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+<div class="card card-style bg-23 mb-3 rounded-m mt-3" data-card-height="150" style="height: 150px;">
+	<div class="card-top m-3">
+		<a href="#" data-bs-dismiss="offcanvas" class="icon icon-xs bg-theme rounded-s color-theme float-end"><i class="bi bi-caret-left-fill"></i></a>
+	</div>
+	<div class="card-bottom p-3">
+		<h1 class="color-white font-20 font-700 mb-n2">Duo Mobile</h1>
+		<p class="color-white font-12 opacity-70 mb-n1">Bootstrap 5 Mobile PWA</p>
+	</div>
+	<div class="card-overlay bg-gradient-fade rounded-0"></div>
+</div>
+
+<div class="bg-theme mx-3 rounded-m shadow-m mt-3 mb-3">
+	<div class="d-flex px-2 pb-2 pt-2">
+		<div>
+			<a href="#"><img src="./index-contact_files/7s.jpg" width="45" class="rounded-s" alt="img"></a>
+		</div>
+		<div class="ps-2 align-self-center">
+			<h5 class="ps-1 mb-0 line-height-xs pt-1">Karla Black</h5>
+			<h6 class="ps-1 mb-0 font-400 opacity-40">Front End Designer</h6>
+		</div>
+		<div class="ms-auto">
+			<a href="#" data-bs-toggle="dropdown" class="icon icon-m ps-3"><i class="bi bi-three-dots-vertical font-18 color-theme"></i></a>
+			<div class="dropdown-menu  bg-transparent border-0 mt-n1 ms-3">
+				<div class="card card-style rounded-m shadow-xl mt-1 me-1">
+					<div class="list-group list-custom list-group-s list-group-flush rounded-xs px-3 py-1">
+						<a href="page-profile-admin.html" class="color-theme opacity-70 list-group-item py-1"><strong class="font-500 font-12">Your Profile</strong><i class="bi bi-chevron-right"></i></a>
+						<a href="page-activity.html" class="color-theme opacity-70 list-group-item py-1"><strong class="font-500 font-12">Notifications</strong><i class="bi bi-chevron-right"></i></a>
+						<a href="page-login-2.html" class="color-theme opacity-70 list-group-item py-1"><strong class="font-500 font-12">Log Out</strong><i class="bi bi-chevron-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<span class="menu-divider">NAVIGATION</span>
+<div class="menu-list">
+	<div class="card card-style rounded-m p-3 py-2 mb-0">
+		<a href="index.html" id="nav-homes"><i class="gradient-blue shadow-bg shadow-bg-xs bi bi-house-fill"></i><span>Homepage</span><i class="bi bi-chevron-right"></i></a>
+		<a href="index-components.html" id="nav-comps"><i class="gradient-red shadow-bg shadow-bg-xs bi bi-gear-fill"></i><span>Components</span><i class="bi bi-chevron-right"></i></a>
+		<a href="index-pages.html" id="nav-pages"><i class="gradient-green shadow-bg shadow-bg-xs bi bi-heart-fill"></i><span>Site Pages</span><i class="bi bi-chevron-right"></i></a>
+		<a href="index-media.html" id="nav-media"><i class="gradient-yellow shadow-bg shadow-bg-xs bi bi-image-fill"></i><span>Media Styles</span><i class="bi bi-chevron-right"></i></a>
+		<a href="" id="nav-mails" class="active-item"><i class="gradient-magenta shadow-bg shadow-bg-xs bi bi-envelope-fill"></i><span>Contact</span><i class="bi bi-chevron-right"></i></a>
+	</div>
+</div>
+
+<span class="menu-divider mt-4">SETTINGS</span>
+<div class="menu-list">
+	<div class="card card-style rounded-m p-3 py-2 mb-0">
+		<a href="#">
+			<i class="gradient-highlight shadow-bg shadow-bg-xs bi bi-palette-fill"></i>
+			<span>Highlights</span>
+			<i class="bi bi-chevron-right"></i>
+		</a>
+		<a href="#" data-toggle-theme="" data-trigger-switch="switch-1">
+			<i class="gradient-dark shadow-bg shadow-bg-xs bi bi-moon-fill font-13"></i>
+			<span>Dark Mode</span>
+			<div class="form-switch ios-switch switch-green switch-s me-2">
+				<input type="checkbox" data-toggle-theme="" class="ios-input" id="switch-1">
+				<label class="custom-control-label" for="switch-1"></label>
+			</div>
+		</a>
+	</div>
+</div>
+
+<span class="menu-divider mt-4">Messages</span>
+<div class="menu-content px-3">
+	<div class="card card-style rounded-m p-2 mx-0 bg-theme mb-0">
+		<div class="menu-list">
+			<a href="#"><img src="./index-contact_files/6s.png" alt="img" class="gradient-orange"><span class="font-500 color-theme">Olivia Orange</span><em class="badge badge-s bg-red-dark">3</em></a>
+			<a href="#"><img src="./index-contact_files/2s.png" alt="img" class="gradient-green"><span class="font-500 color-theme">Marcus Green</span><em class="badge badge-s bg-red-dark">5</em></a>
+			<a href="#"><img src="./index-contact_files/5s.png" alt="img" class="gradient-blue"><span class="font-500 color-theme">Danny Blueish</span><em class="badge badge-s bg-red-dark">1</em></a>
+		</div>
+	</div>
+</div>
+
+<span class="menu-divider mt-4">Latest Updates</span>
+<div class="menu-content px-3">
+	<div class="card card-style rounded-m p-2 mx-0 bg-theme">
+		<a href="#">
+			<div class="d-flex">
+				<div class="align-self-center">
+					<img src="./index-contact_files/14s.jpg" class="rounded-s me-2" width="60" alt="img">
+				</div>
+				<div class="align-self-center">
+					<h5 class="font-14 mb-0 ps-1 pt-1">Duo 3.0 Released</h5>
+					<p class="ps-1 pb-1 mb-0 font-11 line-height-s opacity-70">
+						New design, more components. Bootstrap 5 and Vanilla JS.
+					</p>
+				</div>
+			</div>
+		</a>
+		<div class="mb-2"></div>
+		<a href="#">
+			<div class="d-flex">
+				<div class="align-self-center">
+					<img src="./index-contact_files/5s.jpg" class="rounded-s me-2" width="60" alt="img">
+				</div>
+				<div class="align-self-center">
+					<h5 class="font-14 mb-0 ps-1 pt-1">PWA Ready</h5>
+					<p class="ps-1 pb-1 mb-0 font-11 line-height-s opacity-70">
+						Add Duo to your home screen and enjoy it as you would a native app.
+					</p>
+				</div>
+			</div>
+		</a>
+		<div class="mb-2"></div>
+		<a href="#">
+			<div class="d-flex">
+				<div class="align-self-center">
+					<img src="./index-contact_files/11s.jpg" class="rounded-s me-2" width="60" alt="img">
+				</div>
+				<div class="align-self-center">
+					<h5 class="font-14 mb-0 ps-1 pt-1">Care &amp; Quality</h5>
+					<p class="ps-1 pb-1 mb-0 font-11 line-height-s opacity-70">
+						We love all our customers, and we're always here to help out.
+					</p>
+				</div>
+			</div>
+		</a>
+	</div>
+</div>
+
+<p class="text-center mb-0 mt-n3 pb-3 font-9 text-uppercase font-600 color-theme">Made with <i class=" font-9 px-1 bi bi-heart-fill color-red-dark"></i> by Enabled in <span class="copyright-year"></span>.</p>
+</div>
+
+<div id="menu-color" data-menu-load="menu-highlights.html" style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m"><div class="content">
+	<div class="d-flex">
+		<div>
+			<h1 class="mb-0 font-700 font-20">Color Highlights</h1>
+		</div>
+		<div class="ms-auto me-n2">
+			<a href="#" data-bs-dismiss="offcanvas" class="icon icon-xs mt-n1"><i class="bi bi-x-circle-fill color-red-dark font-18"></i></a>
+		</div>
+	</div>
+
+	<div class="divider mb-4 mt-2"></div>
+
+	<div class="d-flex text-center px-1">
+		<div class="me-auto">
+			<a href="#" data-change-highlight="red" class="icon icon-m gradient-red shadow-bg shadow-bg-xs rounded-s"><i class="bi bi-circle color-white font-16"></i></a>
+			<h5 class="font-14 pt-1">Red</h5>
+		</div>
+		<div class="m-auto">
+			<a href="#" data-change-highlight="green" class="icon icon-m gradient-green shadow-bg shadow-bg-xs rounded-s"><i class="bi bi-circle color-white font-16"></i></a>
+			<h5 class="font-14 pt-1">Green</h5>
+		</div>
+		<div class="m-auto">
+			<a href="#" data-change-highlight="blue" class="icon icon-m gradient-blue shadow-bg shadow-bg-xs rounded-s"><i class="bi bi-check-circle-fill color-white font-16"></i></a>
+			<h5 class="font-14 pt-1">Blue</h5>
+		</div>
+		<div class="ms-auto">
+			<a href="#" data-change-highlight="mint" class="icon icon-m gradient-mint shadow-bg shadow-bg-xs rounded-s"><i class="bi bi-circle color-white font-16"></i></a>
+			<h5 class="font-14 pt-1">Mint</h5>
+		</div>
+	</div>
+	<div class="pt-3"></div>
+	<div class="d-flex text-center px-1 pb-1">
+		<div class="me-auto">
+			<a href="#" data-change-highlight="orange" class="icon icon-m gradient-orange shadow-bg shadow-bg-xs rounded-s"><i class="bi bi-circle color-white font-16"></i></a>
+			<h5 class="font-14 pt-1">Orange</h5>
+		</div>
+		<div class="m-auto">
+			<a href="#" data-change-highlight="yellow" class="icon icon-m gradient-yellow shadow-bg shadow-bg-xs rounded-s"><i class="bi bi-circle color-white font-16"></i></a>
+			<h5 class="font-14 pt-1">Yellow</h5>
+		</div>
+		<div class="m-auto">
+			<a href="#" data-change-highlight="magenta" class="icon icon-m gradient-magenta shadow-bg shadow-bg-xs rounded-s"><i class="bi bi-circle color-white font-16"></i></a>
+			<h5 class="font-14 pt-1">Magenta</h5>
+		</div>
+		<div class="ms-auto">
+			<a href="#" data-change-highlight="brown" class="icon icon-m gradient-brown shadow-bg shadow-bg-xs rounded-s"><i class="bi bi-circle color-white font-16"></i></a>
+			<h5 class="font-14 pt-1">Brown</h5>
+		</div>
+	</div>
+</div>
+<a href="#" data-bs-dismiss="offcanvas" class="mx-3 btn btn-full gradient-highlight shadow-bg shadow-bg-s">Awesome</a>
+</div>
+
+<div class="page-content header-clear-medium">
+<div class="card card-style">
+<div class="responsive-iframe">
+<iframe src="./index-contact_files/view.html" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+<div id="validator-name" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Name is required!</div>
+<div id="validator-mail1" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Email Address is required!</div>
+<div id="validator-mail2" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Invalid email Address!</div>
+<div id="validator-text" class="disabled bg-red-dark content rounded-sm shadow-xl text-center line-height-xs py-3 text-uppercase font-700">Please enter your message!</div>
+<div class="card card-style contact-form">
+<div class="content">
+<form action="php/contact.php" method="post" class="contactForm" id="contactForm">
+<fieldset>
+<div class="form-field form-name">
+<label class="contactNameField color-theme" for="contactNameField">Name:<span>(required)</span></label>
+<input type="text" name="contactNameField" value="" class="round-small" id="contactNameField">
+</div>
+<div class="form-field form-email">
+<label class="contactEmailField color-theme" for="contactEmailField">Email:<span>(required)</span></label>
+<input type="text" name="contactEmailField" value="" class="round-small" id="contactEmailField">
+</div>
+<div class="form-field form-text">
+<label class="contactMessageTextarea color-theme" for="contactMessageTextarea">Message:<span>(required)</span></label>
+<textarea name="contactMessageTextarea" class="round-small" id="contactMessageTextarea"></textarea>
+</div>
+<div class="form-button">
+<input type="submit" class="btn gradient-highlight shadow-bg shadow-bg-l text-uppercase font-700 btn-m btn-full rounded-s contactSubmitButton" value="Send Message" data-formid="contactForm">
+</div>
+</fieldset>
+</form>
+</div>
+</div>
+<div class="form-sent disabled">
+<div class="card card-style gradient-green shadow-bg shadow-bg-m">
+<div class="rounded-m  me-n1 ms-n1 mb-n1 ">
+<h1 class="color-white text-center pt-4"><i class="bi bi-check-circle font-50 rounded-circle"></i></h1>
+<h2 class="color-white font-800 text-center pt-3">Message Sent</h2>
+<p class="color-white pb-4 text-center mt-n2 mb-0 opacity-70">We'll get back to you shortly.</p>
+</div>
+</div>
+</div>
+<div class="card card-style">
+<div class="content">
+<h5 class="color-highlight font-13 mb-n1">Send your Package</h5>
+<h2 class="font-700 pb-0">Postal Information</h2>
+<p class="pb-0 mb-0">PO Box 22161 Street Collins East</p>
+<p class="pb-0 mb-0">PO Box 16122 Collins Street West</p>
+<p class="pb-0">Victoria 8007 Australia</p>
+<div class="divider"></div>
+<h5 class="color-highlight font-13 mb-n1">Come over for Coffee</h5>
+<h2 class="font-700 pb-0">Envato Headquarters</h2>
+<p class="pb-0 mb-0">121 King Street, Melbourne</p>
+<p class="pb-0 mb-0">PO Box 16122 Collins Street West</p>
+<p class="pb-0">Victoria 3000 Australia</p>
+<h5 class="color-highlight font-13 mb-n1">Get in Touch</h5>
+<h2 class="font-700 pb-0">Contact Information</h2>
+<div class="list-group list-custom list-group-m rounded-xs list-group-flush">
+<a href="tel:+1 234 567 8083" class="default-link list-group-item">
+<i class="bi color-green-dark bi-telephone-fill"></i>
+<div>Call Us</div>
+<span class="badge rounded-xl font-500 px-2 font-8 text-uppercase">Tap to Call</span>
+</a>
+<a href="mailto:name@domain.com" class="default-link list-group-item">
+<i class="bi color-blue-dark bi-envelope-fill"></i>
+<div>Email Us</div>
+<span class="badge rounded-xl font-500 px-2 font-8 text-uppercase">Tap to Mail</span>
+</a>
+<a href="" class="default-link list-group-item">
+<i class="bi color-twitter bi-twitter"></i>
+<div>Follow Us</div>
+<span class="badge rounded-xl font-500 px-2 font-8 text-uppercase">Tap to Open</span>
+</a>
+<a href="" class="default-link list-group-item">
+<i class="bi color-facebook bi-facebook"></i>
+<div>Like our Page</div>
+<span class="badge rounded-xl font-500 px-2 font-8 text-uppercase">Tap to Open</span>
+</a>
+<a href="" class="default-link list-group-item">
+<i class="bi color-instagram bi-instagram"></i>
+<div>Follow our Feed</div>
+<span class="badge rounded-xl font-500 px-2 font-8 text-uppercase">Tap to Open</span>
+</a>
+</div>
+</div>
+</div>
+<div class="card card-style py-3">
+<div class="content px-2 text-center">
+<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase">Time to Go Mobile</h5>
+<h2>Get Duo Mobile Today</h2>
+<p class="mb-3">
+Start your next project with Duo and enjoy the power of a Progressive Web App.
+</p>
+<a href="" target="_blank" class="default-link btn btn-m rounded-s gradient-highlight shadow-bg shadow-bg-s px-5 mb-0 mt-2">Get Duo Now</a>
+</div>
+</div>
+</div>
+
+<p class="offline-message bg-red-dark shadow-bg shadow-bg-s color-white"><i class="bi bi-wifi-off pe-2"></i> No internet connection detected</p><p class="online-message bg-green-dark shadow-bg shadow-bg-s color-white"><i class="bi bi-wifi pe-2"></i> You are back online.</p></div>
+
+<script src="./index-contact_files/bootstrap.min.js.download"></script>
+<script type="text/javascript" class="contact-form-c" src="./index-contact_files/form.js.download"></script><script src="./index-contact_files/custom.js.download"></script>
+</body></html>

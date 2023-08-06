@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>Duo Mobile PWA Kit</title>
+<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="fonts/bootstrap-icons.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="../../../css2?family=Inter:wght@500;600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="manifest" href="_manifest.json">
+<meta id="theme-check" name="theme-color" content="#FFFFFF">
+<link rel="apple-touch-icon" sizes="180x180" href="app/icons/icon-192x192.png"></head>
+<body class="theme-light">
+<div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
+<div id="page">
+
+<!-- <div class="header-bar header-fixed header-app header-bar-detached">
+<a data-back-button="" href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+<a href="#" class="header-title color-theme font-13">Back to Pages</a>
+<a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a>
+<a href="#" class="show-on-theme-light" data-toggle-theme=""><i class="bi bi-moon-fill font-13"></i></a>
+<a href="#" class="show-on-theme-dark" data-toggle-theme=""><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+</div> -->
+
+<div class="header-bar header-fixed header-app header-bar-detached">
+<a data-back-button="" href="#"><i class="bi bi-caret-left-fill font-11 color-theme ps-2"></i></a>
+<a href="#" class="header-title color-theme font-13">Back to Pages</a>
+<!-- <a data-bs-toggle="offcanvas" data-bs-target="#menu-color" href="#"><i class="bi bi-palette-fill font-13 color-highlight"></i></a> -->
+<a href="#" class="show-on-theme-light" data-toggle-theme=""><i class="bi bi-moon-fill font-13"></i></a>
+<a href="#" class="show-on-theme-dark" data-toggle-theme=""><i class="bi bi-lightbulb-fill color-yellow-dark font-13"></i></a>
+</div>
+
+<div id="footer-bar" class="footer-bar footer-bar-detached">
+<a href="index.html"><i class="bi bi-house-fill font-16"></i><span>Home</span></a>
+<a href="profile.html"><i class="bi bi-person-lines-fill font-17"></i><span>Profile</span></a>
+<a href="#" data-bs-toggle="offcanvas" data-bs-target="#addx"><i class="bi bi-plus-circle-fill font-24"></i><span>Add</span></a>
+<a href="messages.html"><i class="bi bi-send-check-fill font-16"></i><span>Messages</span></a>
+<a href="#" data-bs-toggle="offcanvas" data-bs-target="#menu-main"><i class="bi bi-list"></i><span>Menu</span></a>
+</div>
+
+<div class="offcanvas offcanvas-bottom rounded-m offcanvas-detached bg-theme" id="addx" style="bottom: calc(100px + env(safe-area-inset-bottom));">
+<div class="content">
+<div class="d-flex pb-2">
+<div class="align-self-center">
+<h5 class="mb-n1 font-12 color-highlight font-700 text-uppercase pt-1">Just tap and</h5>
+<h1 class="font-700">Add Content</h1>
+</div>
+<div class="align-self-center ms-auto">
+<a href="#" data-bs-dismiss="offcanvas" class="icon icon-m"><i class="bi bi-x-circle-fill color-red-dark font-18 me-n4"></i></a>
+</div>
+</div>
+<div class="list-group list-custom list-group-m rounded-xs list-group-flush bg-theme">
+<a href="#" class="list-group-item">
+<i class="bi bi-facebook color-facebook font-16"></i>
+<div>Live</div>
+<i class="bi bi-chevron-right pe-1"></i>
+</a>
+<a href="#" class="list-group-item">
+<i class="bi bi-twitter color-twitter font-16"></i>
+<div>Post</div>
+<i class="bi bi-chevron-right pe-1"></i>
+</a>
+<a href="#" class="list-group-item">
+<i class="bi bi-linkedin color-linkedin font-16"></i>
+<div>Course</div>
+<i class="bi bi-chevron-right pe-1"></i>
+</a>
+<a href="#" class="list-group-item">
+<i class="bi bi-pinterest color-pinterest font-16"></i>
+<div>Event</div>
+<i class="bi bi-chevron-right pe-1"></i>
+</a>
+<a href="#" class="list-group-item">
+<i class="bi bi-pinterest color-pinterest font-16"></i>
+<div>Report Content</div>
+<i class="bi bi-chevron-right pe-1"></i>
+</a>
+</div>
+</div>
+</div>
+
+<div id="menu-main" data-menu-active="nav-media" data-menu-load="menu-main.html" style="width:280px;" class="offcanvas offcanvas-start offcanvas-detached rounded-m">
+</div>
+
+<div id="menu-color" data-menu-load="menu-highlights.html" style="height:340px" class="offcanvas offcanvas-bottom offcanvas-detached rounded-m">
+</div>
+
+<div class="page-content header-clear-medium">
+<div class="card card-style">
+
+<h6 class="font-700 opacity-60 content mb-2">Single Visible Slider - Sides are Visible</h6>
+<div class="splide single-slider slider-dots-under slider-no-dots slider-no-arrows slider-visible-center" id="single-slider-2">
+<div class="splide__track">
+<div class="splide__list">
+<div class="splide__slide">
+<div data-card-height="200" class="card bg-11 rounded-m shadow-l">
+<div class="card-bottom text-center m-3">
+<h2 class="color-white text-uppercase font-900 mb-0">Add Captions</h2>
+<p class="under-heading color-white opacity-60 mb-0">Captions are great for sliders.</p>
+</div>
+<div class="card-overlay rounded-m bg-gradient-fade opacity-90"></div>
+</div>
+</div>
+<div class="splide__slide">
+<div data-card-height="200" class="card bg-23 rounded-m shadow-l">
+<div class="card-bottom m-3">
+<h2 class="color-white text-uppercase font-900 mb-0">Left Aligned</h2>
+<p class="under-heading color-white opacity-60 mb-0">Wherever you need them.</p>
+</div>
+<div class="card-overlay rounded-m bg-gradient-fade opacity-90"></div>
+</div>
+</div>
+<div class="splide__slide">
+<div data-card-height="200" class="card bg-3 rounded-m shadow-l">
+<div class="card-bottom text-end m-3">
+<h2 class="color-white text-uppercase font-900 mb-0">Right Aligned</h2>
+<p class="under-heading color-white opacity-60 mb-0">Wherever you need them.</p>
+</div>
+<div class="card-overlay rounded-m bg-gradient-fade opacity-90"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="divider mx-3 mt-4 mb-3"></div>
+
+<div class="content">
+<div class="responsive-iframe rounded-s">
+<iframe class="rounded-s" src="https://www.youtube.com/embed/c9MnSeYYtYY" frameborder="0" allowfullscreen=""></iframe>
+</div>
+<h3 class="mt-3">YouTube</h3>
+<p> Just copy the link to the service you want and add it inside a responsive-iframe div. We'll do the rest.
+</p>
+<ul class="mb-0 ps-3">
+<li>Flushed or Boxed</li>
+<li>Rounded or Square</li>
+<li>Full support for Badges</li>
+<li>Full support for Switches</li>
+<li>Background or Simple Icons</li>
+</ul>
+<br>
+<div class="row mb-n3">
+<div class="col-6">
+<ul class="icon-list">
+<li class="color-theme"><i class="bi bi-check-circle-fill color-green-dark"></i>Vanilla JS</li>
+<li class="color-theme"><i class="bi bi-check-circle-fill color-green-dark"></i>Bootstrap 5</li>
+<li class="color-theme"><i class="bi bi-check-circle-fill color-green-dark"></i>SCSS and CSS.</li>
+</ul>
+</div>
+<div class="col-6">
+<ul class="icon-list">
+<li class="color-theme"><i class="bi bi-x-circle-fill color-red-dark"></i>WordPress</li>
+<li class="color-theme"><i class="bi bi-x-circle-fill color-red-dark"></i>Google AMP</li>
+<li class="color-theme"><i class="bi bi-x-circle-fill color-red-dark"></i>jQuery Mobile</li>
+</ul>
+</div>
+</div>
+
+<br>
+<div class="row mb-n3">
+<div class="col-6 d-flex justify-content-center align-items-center">
+<h5>price: 300$</h5>
+</div>
+<div class="col-6 d-flex justify-content-center align-items-center">
+<button type="button" class="btn-full btn gradient-blue shadow-bg shadow-bg-m center">Buy</button>
+</div>
+</div>
+
+<br>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/custom.js"></script>
+</body></html>
